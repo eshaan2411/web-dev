@@ -1,0 +1,74 @@
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.image {
+  width: 100%;
+  margin: auto;
+  height: 600px;
+}
+
+.caption a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.thumbnail {
+  border: none;
+}
+
+.contact {
+  text-align: center;
+}
+
+.icons {
+  margin: auto 20px;
+}
+
+.icons:hover {
+  color: #1abc9c;
+}
+
+.compose {
+  text-align: right;
+}
+
+.composeButton {
+  box-shadow: 7px 7px 5px grey;
+  border-radius: 100px;
+  margin-top: 5px;
+  letter-spacing: 5px;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 15px;
+  color: #fff;
+  padding-top: 20px;
+}

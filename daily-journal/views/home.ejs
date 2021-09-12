@@ -1,0 +1,42 @@
+<%# Header Bolier Plate %>
+<%- include("partials/header"); -%>
+
+<%# Background Image %>
+<img class="image" src="/images/diary.jpg" alt="">
+
+<%# Home Page Content %>
+<h1>Home</h1>
+<p> <%= startContent%> </p>
+
+<div class="row">
+
+  <% entries.forEach(function(entry) { %>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+
+        <h3> <%= entry.title %> </h3>
+        <p> <%= entry.content.substring(0,90) + " ..." %></p>
+        <button class="btn btn-info" type="button" name="button">
+          <a href="/posts/<%= entry.title%>">Read more</a>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <% }); %>
+
+</div>
+
+<div class="compose">
+  <a href="\compose">
+  <button class="btn btn-success btn-lg composeButton" type="button" name="button">
+    <i class="fas fa-pencil-alt"></i> COMPOSE
+  </button>
+  </a>
+</div>
+
+<%# Footer Boiler Plate %>
+<%- include("partials/footer"); -%>

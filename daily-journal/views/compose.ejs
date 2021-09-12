@@ -1,0 +1,21 @@
+
+<%# Header Bolier Plate %>
+<%- include("partials/header"); -%>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Your title here" name="title" autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Content</label>
+    <textarea class="form-control" name="content" rows="8" cols="80"></textarea>
+  </div>
+
+  <button class="btn btn-danger btn-lg" type="submit" name="button">Post</button>
+</form>
+
+<%# Footer Boiler Plate %>
+<%- include("partials/footer"); -%>
