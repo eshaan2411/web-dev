@@ -29,6 +29,7 @@ app.post('/', function(req, res){
     }]
   };
 
+//   Preferably use mailchimp services and API. 
   const jsonData = JSON.stringify(data);
   const url = "#your url";
   const options = {
